@@ -15,7 +15,7 @@ setup(
     name=PACKAGE_NAME,
     version=main_ns['__version__'],
     url='http://github.io/import.io/import-io-api-python',
-    author='Andrew Fogg, David Gwartney',
+    author='David Gwartney',
     author_email='david.gwartney@import.io',
     packages=['importio2', 'importio2/commands'],
     license='LICENSE',
