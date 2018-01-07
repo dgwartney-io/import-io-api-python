@@ -30,6 +30,7 @@ setup(
             'io-csv-to-db = importio2.commands.csv_to_db:main',
             'io-csv-to-json = importio2.commands.csv_to_json:main',
             'io-date-to-epoch = importio2.commands.date_to_epoch:main',
+            'io-doc-gen = importio2.commands.extractor_document_generator:main',
             'io-json-to-crawl-run = importio2.commands.json_to_crawl_run:main',
             'io-run-sql = importio2.commands.run_sql:main',
             'io-sql-to-csv = importio2.commands.sql_to_csv:main',
