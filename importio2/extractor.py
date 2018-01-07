@@ -215,7 +215,15 @@ class ExtractorAPI(object):
 
         :return: List of GUIDs
         """
-        return []
+        response = apicore.extractor_list(self._api_key, page=1)
+        extractor_doc = response.json()
+        print(response.text)
+        extractor_list = []
+        for extractor in extractor_doc['hits']['hits']:
+            print(extractor)
+            extractor_list.append(extractor)
+
+        return extractor_list
 
     def put_url_list(self, guid, urls):
         """
