@@ -65,9 +65,10 @@ def extractor_list(api_key, page):
 
     querystring = {"_sort": "_meta.creationTimestamp",
                    "_mine": "true",
-                   "q": "_missing_%3Aarchived%20OR%20archived%3Afalse",
+                   "q": "_missing_:archived OR archived:false",
                    "_page": page,
-                   "_apikey": api_key
+                   "_apikey": api_key,
+                   "_perpage": 1000
                    }
 
     headers = {
