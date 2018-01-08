@@ -217,10 +217,8 @@ class ExtractorAPI(object):
         """
         response = apicore.extractor_list(self._api_key, page=1)
         extractor_doc = response.json()
-        print(response.text)
         extractor_list = []
         for extractor in extractor_doc['hits']['hits']:
-            print(extractor)
             extractor_list.append(extractor)
 
         return extractor_list
