@@ -93,7 +93,7 @@ def extractor_get_crawl_runs(api_key, guid, page, per_page):
 
     querystring = {"_sort": "_meta.creationTimestamp",
                    "_page": page,
-                   "_perPage": per_page,
+                   "_perpage": per_page,
                    "extractorId": guid,
                    "_apikey": api_key
                    }
@@ -101,7 +101,6 @@ def extractor_get_crawl_runs(api_key, guid, page, per_page):
         'cache-control': "no-cache",
     }
     logger.debug("url: {0}, headers: {1}, querystring: {2}".format(url, headers, querystring))
-
     return requests.request("GET", url, headers=headers, params=querystring)
 
 

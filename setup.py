@@ -22,6 +22,7 @@ setup(
     entry_points={
         'console_scripts': [
             'extractor = importio2.extractor_cli:main',
+            'io-account-stats = importio2.commands.account_stats:main',
             'io-crawl-run-download = importio2.commands.crawl_run_download:main',
             'io-change-ownership = importio2.commands.change_ownership:main',
             'io-csv-download = importio2.commands.csv_download:main',
